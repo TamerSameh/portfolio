@@ -1,0 +1,10 @@
+.background-meridian {
+  position: fixed;
+  top: 0;
+  left: 48px;
+  width: 1px;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+  background: rgba(114, 241, 207, 0.06);
+}
