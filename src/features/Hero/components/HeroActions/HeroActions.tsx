@@ -3,12 +3,16 @@ import styles from "./HeroActions.module.css";
 export default function HeroActions() {
   return (
     <div className={styles.actions}>
-      <button className={styles.primary} type="button">
+      <a className={styles.primary} href="#projects">
         View Projects
-      </button>
-      <button className={styles.secondary} type="button">
+      </a>
+      <a
+        className={styles.secondary}
+        href="/Tamer-Sameh-CV.pdf"
+        download
+      >
         Download CV
-      </button>
+      </a>
     </div>
   );
 }
