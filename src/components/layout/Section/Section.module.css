@@ -1,19 +1,11 @@
 .section {
-  padding-top: var(--space-12);
+  padding-top: 0;
   padding-bottom: var(--space-12);
   scroll-margin-top: 72px;
 }
 
-@media (min-width: 768px) {
-  .section {
-    padding-top: var(--space-14);
-    padding-bottom: var(--space-14);
-  }
-}
-
 @media (min-width: 1024px) {
   .section {
-    padding-top: var(--space-16);
-    padding-bottom: var(--space-16);
+    padding-bottom: var(--space-28);
   }
 }

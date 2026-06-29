@@ -3,7 +3,7 @@ import { StatusPanel } from "./components/StatusPanel";
 import { MainHeading } from "./components/MainHeading";
 import { HeroActions } from "./components/HeroActions";
 import { HeroVisual } from "./components/HeroVisual";
-import { SocialLinks } from "./components/SocialLinks";
+import { TechStack } from "./components/TechStack";
 
 export default function Hero() {
   return (
@@ -12,7 +12,7 @@ export default function Hero() {
         <StatusPanel />
         <MainHeading />
         <HeroActions />
-        <SocialLinks />
+        <TechStack />
       </div>
       <HeroVisual />
     </div>

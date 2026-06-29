@@ -5,7 +5,7 @@
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--color-border);
   border-radius: 14px;
-  padding: var(--space-4) var(--space-5);
+  padding: var(--space-1-5) var(--space-5);
 }
 
 .row {

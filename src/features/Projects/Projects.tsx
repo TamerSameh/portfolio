@@ -41,7 +41,7 @@ export default function Projects() {
     <>
       <div className={styles.header}>
         <p className={styles.title}>Featured Project</p>
-        <h2 className={styles.subtitle}>What I&rsquo;ve built</h2>
+        <h2 className={styles.subtitle}>Featured Project</h2>
       </div>
 
       <div

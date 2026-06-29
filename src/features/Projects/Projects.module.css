@@ -1,5 +1,11 @@
 .header {
-  margin-bottom: var(--space-10);
+  margin-bottom: var(--space-6);
+}
+
+@media (min-width: 1024px) {
+  .header {
+    margin-bottom: var(--space-8);
+  }
 }
 
 .title {
@@ -24,7 +30,7 @@
 .showcase {
   display: flex;
   flex-direction: column-reverse;
-  gap: var(--space-10);
+  gap: var(--space-6);
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.7s ease, transform 0.7s ease;
@@ -272,7 +278,7 @@
   .showcase {
     flex-direction: row;
     align-items: center;
-    gap: var(--space-16);
+    gap: var(--space-8);
   }
 
   .details {
@@ -282,7 +288,7 @@
 
   .preview {
     flex: 1;
-    max-width: 560px;
+    max-width: 640px;
   }
 
   .projectTitle {

@@ -1,9 +1,9 @@
 import styles from "./StatusPanel.module.css";
 
 const rows = [
-  { label: "STATUS", value: "Available for freelance" },
+  { label: "STATUS", value: "Open to Work" },
   { label: "LOCATION", value: "Egypt" },
-  { label: "CURRENTLY", value: "Building Meridian Portfolio" },
+  { label: "FOCUS", value: "Building Modern Web Applications" },
 ] as const;
 
 export default function StatusPanel() {

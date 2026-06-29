@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import styles from "./Navbar.module.css";
 
 const navItems = [
@@ -12,22 +12,39 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [active, setActive] = useState("home");
+  const ratiosRef = useRef<Map<string, number>>(new Map());
+
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+    const ratios = ratiosRef.current;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          ratios.set(entry.target.id, entry.intersectionRatio);
+        });
+
+        let maxId = "home";
+        let maxRatio = 0;
+        ratios.forEach((ratio, id) => {
+          if (ratio > maxRatio) {
+            maxRatio = ratio;
+            maxId = id;
+          }
+        });
+        setActive(maxId);
+      },
+      { threshold: [0, 0.25, 0.5, 0.75, 1] }
+    );
+
+    sections.forEach((sec) => observer.observe(sec));
+    return () => observer.disconnect();
+  }, []);
 
   useEffect(() => {
     function onScroll() {
       setScrolled(window.scrollY > 20);
-
-      const sections = document.querySelectorAll("section[id]");
-      let current = "home";
-      sections.forEach((sec) => {
-        const top = sec.getBoundingClientRect().top;
-        if (top <= 150) {
-          current = sec.id;
-        }
-      });
-      setActive(current);
     }
-
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
     return () => window.removeEventListener("scroll", onScroll);

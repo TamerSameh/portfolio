@@ -40,23 +40,23 @@ export default function HeroVisual() {
             <span className={styles.punc}>[</span>
           </span>
           <span className={`${styles.line} ${styles.indent} ${styles["indent-2"]}`}>
-            <span className={styles.str}>"React"</span>
+            <span className={styles.str}>"HTML5"</span>
             <span className={styles.punc}>,</span>
           </span>
           <span className={`${styles.line} ${styles.indent} ${styles["indent-2"]}`}>
-            <span className={styles.str}>"TypeScript"</span>
+            <span className={styles.str}>"CSS3"</span>
             <span className={styles.punc}>,</span>
           </span>
           <span className={`${styles.line} ${styles.indent} ${styles["indent-2"]}`}>
-            <span className={styles.str}>"Next.js"</span>
+            <span className={styles.str}>"JavaScript"</span>
             <span className={styles.punc}>,</span>
           </span>
           <span className={`${styles.line} ${styles.indent} ${styles["indent-2"]}`}>
-            <span className={styles.str}>"Tailwind"</span>
+            <span className={styles.str}>"Bootstrap"</span>
             <span className={styles.punc}>,</span>
           </span>
           <span className={`${styles.line} ${styles.indent} ${styles["indent-2"]}`}>
-            <span className={styles.str}>"Node.js"</span>
+            <span className={styles.str}>"Vite"</span>
             <span className={styles.punc}>,</span>
           </span>
           <span className={`${styles.line} ${styles.indent}`}>
@@ -64,9 +64,9 @@ export default function HeroVisual() {
             <span className={styles.punc}>,</span>
           </span>
           <span className={`${styles.line} ${styles.indent}`}>
-            <span className={styles.prop}>available</span>
+            <span className={styles.prop}>status</span>
             <span className={styles.punc}>:</span>{" "}
-            <span className={styles.bool}>true</span>
+            <span className={styles.str}>"Open to Work"</span>
             <span className={styles.punc}>,</span>
           </span>
           <span className={styles.line}>
