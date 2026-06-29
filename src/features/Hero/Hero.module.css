@@ -1,14 +1,15 @@
 .hero {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
+  padding-top: var(--space-4);
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
+  align-items: center;
+  gap: 16px;
 }
 
 @media (min-width: 1024px) {
@@ -17,7 +18,7 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 48px;
-    padding-top: var(--space-12);
+    padding-top: var(--space-10);
     margin-bottom: calc(-1 * var(--space-10));
   }
 
@@ -25,5 +26,7 @@
     flex: 1;
     max-width: 540px;
     padding-top: var(--space-10);
+    align-items: flex-start;
+    gap: 20px;
   }
 }

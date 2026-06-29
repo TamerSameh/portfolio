@@ -45,16 +45,16 @@ export default function About() {
       </h2>
       <div className={styles.description}>
         <p>
-          I build clean, performant interfaces with{" "}
-          <span className={styles.highlight}>React</span>,{" "}
-          <span className={styles.highlight}>TypeScript</span>, and modern
-          tooling. I focus on creating products that are both visually refined
-          and technically solid.
+          I&rsquo;m a frontend developer who builds responsive, accessible
+          interfaces with <span className={styles.highlight}>React</span>,{" "}
+          <span className={styles.highlight}>TypeScript</span>, and modern CSS.
+          I focus on writing clean, maintainable code that works reliably across
+          devices and browsers.
         </p>
         <p>
-          Currently exploring full-stack patterns with{" "}
-          <span className={styles.highlight}>Next.js</span> and building
-          projects that balance design and engineering.
+          I&rsquo;m currently expanding into full-stack with{" "}
+          <span className={styles.highlight}>Next.js</span> and backend
+          patterns, building complete features from design through deployment.
         </p>
       </div>
       <div className={styles.skills}>

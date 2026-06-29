@@ -30,7 +30,7 @@
 .showcase {
   display: flex;
   flex-direction: column-reverse;
-  gap: var(--space-6);
+  gap: var(--space-4);
   opacity: 0;
   transform: translateY(30px);
   transition: opacity 0.7s ease, transform 0.7s ease;
@@ -44,7 +44,13 @@
 .details {
   display: flex;
   flex-direction: column;
-  gap: var(--space-5);
+  gap: var(--space-4);
+}
+
+@media (min-width: 1024px) {
+  .details {
+    gap: var(--space-5);
+  }
 }
 
 .projectTitle {
@@ -136,7 +142,7 @@
 
 .actions {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: var(--space-3);
 }
 
@@ -155,6 +161,7 @@
               box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
               background 0.2s ease;
   text-decoration: none;
+  width: 100%;
 }
 
 .button:hover {
@@ -284,6 +291,7 @@
   .details {
     flex: 1;
     max-width: 520px;
+    gap: var(--space-5);
   }
 
   .preview {
@@ -293,5 +301,13 @@
 
   .projectTitle {
     font-size: var(--text-3xl);
+  }
+
+  .actions {
+    flex-direction: row;
+  }
+
+  .button {
+    width: auto;
   }
 }

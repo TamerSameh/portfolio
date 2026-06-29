@@ -40,7 +40,7 @@ export default function Projects() {
   return (
     <>
       <div className={styles.header}>
-        <p className={styles.title}>Featured Project</p>
+        <p className={styles.title}>Project</p>
         <h2 className={styles.subtitle}>Featured Project</h2>
       </div>
 

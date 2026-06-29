@@ -57,6 +57,10 @@ export default function Contact() {
         reach out.
       </p>
 
+      <p className={styles.invite}>
+        Reach out through any of the channels below:
+      </p>
+
       <div className={styles.links}>
         {links.map((link) => (
           <a

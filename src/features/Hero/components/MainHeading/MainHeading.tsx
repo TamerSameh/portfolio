@@ -8,9 +8,7 @@ export default function MainHeading() {
         Tamer <span className={styles.accent}>Sameh</span>
       </h1>
       <p className={styles.subtitle}>
-        I build clean, responsive frontend interfaces
-        <br />
-        that are interactive, accessible, and built to perform.
+        I build clean, responsive frontend interfaces that are interactive, accessible, and built to perform.
       </p>
     </div>
   );

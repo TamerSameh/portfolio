@@ -2,12 +2,20 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
+  width: 100%;
 }
 
 @media (min-width: 640px) {
   .actions {
     flex-direction: row;
     gap: 16px;
+    width: auto;
+  }
+
+  .primary,
+  .secondary {
+    width: auto;
+    max-width: none;
   }
 }
 
@@ -18,6 +26,8 @@
   justify-content: center;
   height: 52px;
   padding: 0 28px;
+  width: 100%;
+  max-width: 100%;
   border-radius: var(--radius-md);
   font-family: var(--font-sans);
   font-size: var(--text-sm);
@@ -48,15 +58,6 @@
   transition: opacity 0.2s ease;
 }
 
-.primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 30px rgba(100, 255, 218, 0.3);
-}
-
-.primary:hover::before {
-  opacity: 1;
-}
-
 .primary:active {
   transform: translateY(0);
 }
@@ -67,15 +68,26 @@
   border: 1px solid var(--color-border-hover);
 }
 
-.secondary:hover {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: var(--color-text-secondary);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
 .secondary:active {
   transform: translateY(0);
+}
+
+@media (hover: hover) {
+  .primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 30px rgba(100, 255, 218, 0.3);
+  }
+
+  .primary:hover::before {
+    opacity: 1;
+  }
+
+  .secondary:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: var(--color-text-secondary);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .primary:focus-visible,
